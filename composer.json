@@ -48,8 +48,8 @@
     "ttek/tk-user": "~1.0",
     "ttek/tk-map": "~1.0",
     "ttek/tk-jslib": "~1.0",
-    
-    "leafo/lessphp": "~0.0"
+
+    "oyejorge/less.php": "~1.5"
   },
 
     "extra": {
