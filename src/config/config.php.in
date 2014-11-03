@@ -1,0 +1,39 @@
+<?php
+/**
+ * config.php
+ *
+ * Edit this file to suit your system.
+ *
+ */
+
+// Database connection parameters
+$config['db.connect.default'] = array(
+    'type' => 'mysql',
+    'host' => 'localhost',
+    'dbname' => '',
+    'user' => '',
+    'pass' => ''
+);
+
+// Release mode should be set according to what environment you
+//  are running the system on.
+//   o dev  - Used when developing the application
+//   o test - Used when the application is being tested for release
+//   o live - Use when deploying the application to production servers
+//
+$config['system.releaseMode']          = \Tk\Config::RELEASE_LIVE;
+
+// The site email is used as the default email
+// for all system administration communications.
+$config['system.site.email']        = 'noreply@example.com';
+
+
+//$config['system.debugMode']         = true;
+//$config['system.log.level']         = '~\\Tk\\Log\\Log::SYSTEM | \\Tk\\Log\\Log::SYSTEM';
+//$config['system.debugEmail']        = 'debug@example.com';
+//$config['system.log.path']          = '/home/user/log/error.log';
+
+
+
+
+

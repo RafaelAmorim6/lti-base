@@ -1,0 +1,60 @@
+{
+  "name": "ttek/lti-base",
+  "type": "project",
+  "description": "A base LTI module site for supporting LMS.",
+  "keywords": ["tropotek", "tk004", "LTI"],
+  "time": "2012-12-09",
+  "license": "MIT",
+  "version": "trunk",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Michael Mifsud",
+      "email": "info@tropotek.com.au",
+      "homepage": "http://www.tropotek.com/"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+        "": [
+          "src/",
+          "plugin/"
+        ]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "config\\ComposerEvent::postInstall"
+    ],
+    "post-update-cmd": [
+      "config\\ComposerEvent::postUpdate"
+    ]
+  },
+
+  "require": {
+    "php": ">=5.3.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-gd": "*",
+
+    "ttek/tk-installers": "~1.0",
+
+    "ttek/tk-domtemplate": "~1.0",
+    "ttek/tk-framework": "~1.0",
+    "ttek/tk-modlib": "~1.0",
+    "ttek/tk-form": "~1.0",
+    "ttek/tk-table": "~1.0",
+    "ttek/tk-plugin": "~1.0",
+    "ttek/tk-user": "~1.0",
+    "ttek/tk-map": "~1.0",
+    "ttek/tk-jslib": "~1.0",
+    
+    "leafo/lessphp": "~0.0"
+  },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

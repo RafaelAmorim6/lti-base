@@ -1,0 +1,97 @@
+// Tables
+// --------------------------
+
+.tk-table {
+
+  .tableEvents {
+    border: 1px solid @table-border-color;
+    border-width: 1px 1px 0px 1px;
+  }
+  .fieldBox {
+    display: inline-block;
+  }
+  .filters {
+    background-color: @table-bg-hover;
+    padding: 10px 10px;
+    border-bottom: 1px solid @table-border-color;
+    
+    .form-group {
+      margin: 0px 5px;
+    }
+      
+      
+      
+      
+  }
+  form {
+    margin: 0;
+  }
+  .actions {
+    padding: 10px 10px;
+    .btn {
+      margin: 0px 5px
+    }
+  }
+  
+  .ctrlBox {
+    .clearfix();
+      text-align: center;
+    .tk-results {
+      line-height: 25px;
+      text-align: left;
+    }
+    .tk-pager {
+      display: inline-block;
+      ul.pagination {
+        margin: 0;
+      }
+    }
+    .tk-limit {
+      text-align: right;
+      select {
+        max-width: 100px;
+      }
+    }
+  }
+  
+  th  {
+    color: invert(@table-border-color);
+    background-color: @table-border-color;
+    
+    &.orderAsc {
+      a:after  { font-size: 0.8em; font-family: 'Glyphicons Halflings';font-weight: normal; content: "\e151"; padding: 0px 5px; display: inline-block; }
+    }
+    &.orderDesc {
+      a:after {  font-size: 0.8em; font-family: 'Glyphicons Halflings';font-weight: normal; content: "\e152"; padding: 0px 5px; display: inline-block; }
+    }
+    a {
+      color: inherit;
+      background-color: inherit;
+    }
+    &.orderDesc, &.orderAsc {
+    }
+    &:hover {
+    }
+    input[type=checkbox] {
+      margin: 0;
+    }
+    
+  }
+  
+  .table tbody td {
+    vertical-align: middle;
+    line-height: 1.1;
+    white-space: nowrap;
+    
+    &.key {
+      width: 100%;
+    }
+    input[type=checkbox] {
+      margin: 0;
+    }
+  }
+  
+  
+}
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="user-dashboard">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="profile-box well">
+        <div class="profile-image">
+          <a href="#" class="thumbnail pull-left">
+            <img src="http://placehold.it/120x120" alt="Avatar" var="user-avatar" />
+          </a>
+        </div>
+        <div class="profile-info pull-left">
+          <p><strong>Signed up:</strong> <br/> <span var="signed-up">4 Months ago</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="well clearfix">
+        <img src="http://placehold.it/900x350" class="img-responsive img-rounded" />
+        <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+        <a href="#" class="btn btn-primary btn-lg pull-right">Call to Action!</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo.
+      </p>
+    </div>
+  </div>
+
+</div>

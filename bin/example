@@ -1,0 +1,59 @@
+#! /usr/bin/php
+<?php
+/*
+ * Tropotek Web Development Tools.
+ *
+ * @author Michael Mifsud <info@tropotek.com>
+ * @link http://www.tropotek.com/
+ * @license Copyright 2005 Michael Mifsud
+ */
+
+include(dirname(dirname(__FILE__)) . '/vendor/autoload.php');
+
+// Enaqble for access to app settings
+//include($sitePath . '/lib/Ext/_prepend.php');
+//\Tk\Config::getInstance()->parseConfigFile($sitePath . '/config.php');
+
+
+$argv = $_SERVER['argv'];
+$argc = $_SERVER['argc'];
+$help = <<<TEXT
+Usage: {$argv[0]}
+
+  A description of the cli options and how to use the command.
+
+  --help                Display this help text.
+
+TEXT;
+
+// Define any parameter variables here
+$minArgs = 1;
+$maxArgs = 20;
+
+
+// Check max/min args
+if ($argc < $minArgs || $argc > $maxArgs){
+  echo $help;
+  exit;
+}
+// Parse any arguments from the command line
+foreach ($argv as $param) {
+    if (strtolower(substr($param, 0, 6)) == '--help') {
+        echo $help;
+        exit;
+    }
+}
+
+try {
+    // Write script code here
+
+
+    print_r(\Tk\Url::create('/test')->toString());
+
+
+
+
+    echo "\n";
+} catch(\Exception $e) {
+    die ($e->toString());
+}

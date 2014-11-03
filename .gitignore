@@ -1,0 +1,15 @@
+.htaccess
+.idea
+.directory
+*.swp
+*bak*
+_*
+data
+assets
+vendor
+plugins
+plugin
+docs
+composer.lock
+src/config/config.php
+bin/db/bak

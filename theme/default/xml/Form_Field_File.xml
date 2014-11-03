@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<div>
+  <script src="/assets/jquery/plugins/jquery.fileFix.js"></script>
+  <script>
+    // TODO: move to theme
+    jQuery(function($) {
+    $('.tk-form .File input[type=file]').fileFix();
+    });
+  </script>
+  <input type="file" var="element" />
+</div>

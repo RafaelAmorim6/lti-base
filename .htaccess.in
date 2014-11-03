@@ -1,0 +1,50 @@
+
+# Secure non-accessable files types
+<FilesMatch "\.(ht(access|passwd)|in|ini|inc|xml|tpl)$">
+  order allow,deny
+  deny from all
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Your site url is http://www.yourcompany.com/store/index.html
+  # So RewriteBase should be:
+  # RewriteBase /store/
+  RewriteBase /
+
+  # Removes trailing slashes (prevents SEO duplicate content issues)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ $1 [L,R=301]
+
+  # Disable rewriting for existing files or directories
+  # redirect all other requests to index.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|ico|js|less|css)$
+  rewriteRule ^.*$ index.php [PT,L]
+
+</IfModule>
+
+# SET 1 Month Cache for media files
+<FilesMatch "\.(jpg|jpeg|png|gif|ico)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=2629744, public"
+  </IfModule>
+</FilesMatch>
+
+# Compress javascript, css and all text files
+<ifmodule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+
