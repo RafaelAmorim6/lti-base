@@ -33,6 +33,9 @@ $config['system.auth.ldap.port']   = 389;
 $config['system.auth.ldap.baseDn'] = 'ou=people,o=unimelb';
 
 
+// Set to true if you want to use SSL pages
+//$config['system.enableSsl'] = true;
+
 // Set these when using admin only authentication
 // This is a simple one user auth used for small sites.
 //$config['site.auth.username'] = 'admin';
