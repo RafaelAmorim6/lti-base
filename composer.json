@@ -1,5 +1,5 @@
 {
-  "name": "ttek/lti-base",
+  "name": "fvas/lti-base",
   "type": "project",
   "description": "A base LTI module site for supporting LMS.",
   "keywords": ["tropotek", "tk004", "LTI"],
@@ -37,17 +37,17 @@
     "ext-json": "*",
     "ext-gd": "*",
 
-    "ttek/tk-installers": "~1.0",
+    "fvas/tk-installers": "~1.0",
 
-    "ttek/tk-domtemplate": "~1.0",
-    "ttek/tk-framework": "~1.0",
-    "ttek/tk-modlib": "~1.0",
-    "ttek/tk-form": "~1.0",
-    "ttek/tk-table": "~1.0",
-    "ttek/tk-plugin": "~1.0",
-    "ttek/tk-user": "~1.0",
-    "ttek/tk-map": "~1.0",
-    "ttek/tk-jslib": "~1.0",
+    "fvas/tk-domtemplate": "~1.0",
+    "fvas/tk-framework": "~1.0",
+    "fvas/tk-modlib": "~1.0",
+    "fvas/tk-form": "~1.0",
+    "fvas/tk-table": "~1.0",
+    "fvas/tk-plugin": "~1.0",
+    "fvas/tk-user": "~1.0",
+    "fvas/tk-map": "~1.0",
+    "fvas/tk-jslib": "~1.0",
 
     "oyejorge/less.php": "~1.5"
   },
