@@ -1,7 +1,7 @@
 {
   "name": "fvas/lti-base",
   "type": "project",
-  "description": "A base LTI module site for supporting LMS.",
+  "description": "A base LTI module site for supporting LMS. ",
   "keywords": ["tropotek", "tk004", "LTI"],
   "time": "2012-12-09",
   "license": "MIT",
